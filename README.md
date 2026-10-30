@@ -133,6 +133,8 @@ About 5 minutes. Before you record: run `npm install` and `npm test`, then start
 
 Reset between scenarios with `npm run demo:reset`. It discards every uncommitted change under `apps/` and `packages/`.
 
+When the gate blocks, the transcript shows its report as a "Stop hook blocking error" and Claude keeps working. When it passes, you see a `✓ Gate passed` line.
+
 ### 1. Missing tests
 
 Ask:

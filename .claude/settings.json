@@ -7,6 +7,10 @@
       "Bash(npm run gate)",
       "Bash(npm run typecheck*)",
       "Bash(npx vitest *)"
+    ],
+    "deny": [
+      "Edit(/scripts/gate/**)",
+      "Edit(/gate.config.json)"
     ]
   },
   "hooks": {
