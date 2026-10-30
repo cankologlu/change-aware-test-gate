@@ -1,0 +1,22 @@
+{
+  "baseRef": "HEAD",
+  "maxRetries": 3,
+  "layers": {
+    "api": {
+      "paths": ["apps/api/src/**"],
+      "testPaths": ["apps/api/**/*.test.ts"],
+      "testExempt": ["apps/api/src/server.ts"],
+      "testCommand": "npm run test -w apps/api",
+      "subagent": "api-tester"
+    },
+    "ui": {
+      "paths": ["apps/ui/src/**"],
+      "testPaths": ["apps/ui/**/*.test.{ts,tsx}"],
+      "testExempt": ["apps/ui/src/main.tsx"],
+      "testCommand": "npm run test -w apps/ui",
+      "subagent": "ui-tester"
+    }
+  },
+  "sharedPaths": ["packages/shared/**"],
+  "ignorePaths": ["**/*.md", ".gate/**", ".claude/**"]
+}
