@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Gate runtime output (retry counter, reports, last diff)
+.gate/
+
+# Personal Claude Code overrides
+.claude/settings.local.json
