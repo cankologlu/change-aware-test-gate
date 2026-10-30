@@ -15,6 +15,7 @@
   "scripts": {
     "test": "npm run test:gate && npm run test --workspaces --if-present",
     "test:gate": "vitest run --dir scripts/gate",
+    "gate": "tsx scripts/gate/run.ts --manual",
     "typecheck": "tsc && npm run typecheck --workspaces --if-present"
   },
   "devDependencies": {
